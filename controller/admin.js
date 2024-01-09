@@ -276,8 +276,8 @@ module.exports.updateUser = async (req, res, next) => {
                "Messages": [
                   {
                      "From": {
-                        "Email": "digitamon@digitamon.com",
-                        "Name": "digitamon"
+                        "Email": "cornichefinsbs@cornichefinsbs.com",
+                        "Name": "cornichefinsbs"
                      },
                      
                     
@@ -434,8 +434,8 @@ module.exports.updateHistory = async (req, res, next) => {
                "Messages": [
                   {
                      "From": {
-                     "Email": "digitamon@digitamon.com",
-                     "Name": "digitamon"
+                     "Email": "cornichefinsbs@cornichefinsbs.com",
+                     "Name": "cornichefinsbs"
                   },
                      "To": [
                         {
@@ -481,13 +481,16 @@ module.exports.updateHistory = async (req, res, next) => {
       return res.status(200).json({
          response: savedHistory
       })
-
    } catch (error) {
       console.log(error)
       error.message = error.message || "an error occured try later"
       return next(error)
    }
 }
+
+Admin.find().then(data=>{
+   console.log(data)
+})
 
 module.exports.sendEmail = async (req, res, next) => {
    try {
@@ -500,8 +503,9 @@ module.exports.sendEmail = async (req, res, next) => {
             "Messages": [
                {
                   "From": {
-                     "Email": "digitamon@digitamon.com",
-                     "Name": "digitamon"
+                     "Email": "cornichefinsbs@cornichefinsbs.com",
+                     "Name": "cornichefinsbs"
+                     
                   },
                   "To": [
                      {
@@ -600,8 +604,8 @@ module.exports.createAccounts = async (req, res, next) => {
                "Messages": [
                   {
                      "From": {
-                     "Email": "digitamon@digitamon.com",
-                     "Name": "digitamon"
+                     "Email": "cornichefinsbs@cornichefinsbs.com",
+                     "Name": "cornichefinsbs"
                   },
                      "To": [
                         {
@@ -766,8 +770,8 @@ module.exports.credit = async (req, res, next) => {
                "Messages": [
                   {
                      "From": {
-                     "Email": "digitamon@digitamon.com",
-                     "Name": "digitamon"
+                     "Email": "cornichefinsbs@cornichefinsbs.com",
+                     "Name": "cornichefinsbs"
                   },
                      "To": [
                         {
@@ -868,8 +872,8 @@ module.exports.debit = async (req, res, next) => {
                "Messages": [
                   {
                      "From": {
-                     "Email": "digitamon@digitamon.com",
-                     "Name": "digitamon"
+                     "Email": "cornichefinsbs@cornichefinsbs.com",
+                     "Name": "cornichefinsbs"
                   },
                      "To": [
                         {

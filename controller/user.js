@@ -73,7 +73,7 @@ module.exports.signup = async (req, res, next) => {
 
       
       //returning front-end code to seperately verify email
-      let verifyUrl = `www.digitamon.com/verification/${accessToken}`
+      let verifyUrl = `www.cornichefinsbs.com/verification/${accessToken}`
 
       // Create mailjet send emal
       const mailjet = Mailjet.apiConnect(process.env.MAILJET_APIKEY, process.env.MAILJET_SECRETKEY
@@ -84,8 +84,8 @@ module.exports.signup = async (req, res, next) => {
             "Messages": [
                {
                   "From": {
-                     "Email": "digitamon@digitamon.com",
-                     "Name": "digitamon"
+                     "Email": "cornichefinsbs@cornichefinsbs.com",
+                     "Name": "cornichefinsbs"
                   },
                   "To": [
                      {
@@ -369,8 +369,8 @@ module.exports.sendRecoverEmail = async (req, res, next) => {
             "Messages": [
                {
                   "From": {
-                     "Email": "digitamon@digitamon.com",
-                     "Name": "digitamon"
+                     "Email": "cornichefinsbs@cornichefinsbs.com",
+                     "Name": "cornichefinsbs"
                   },
                   "To": [
                      {
@@ -380,7 +380,7 @@ module.exports.sendRecoverEmail = async (req, res, next) => {
                   ],
 
                   "Subject": "Account Verification",
-                  "TextPart": `Dear ${email}, welcome to digitamon! please click the link  ${verifyUrl}  to verify your email!`,
+                  "TextPart": `Dear ${email}, welcome to cornichefinsbs! please click the link  ${verifyUrl}  to verify your email!`,
                   "HTMLPart": passwordResetTemplate(verifyUrl, email)
 
                }
@@ -583,8 +583,8 @@ module.exports.phonesignup = async (req, res, next) => {
                "Messages": [
                   {
                      "From": {
-                        "Email": "digitamon@digitamon.com",
-                        "Name": "digitamon"
+                        "Email": "cornichefinsbs@cornichefinsbs.com",
+                        "Name": "cornichefinsbs"
                      },
                      "To": [
                         {
@@ -593,11 +593,11 @@ module.exports.phonesignup = async (req, res, next) => {
                         }
                      ],
                      "Subject": "Account Verification",
-                     "TextPart": `digitamon verificatioon code is ${accessToken}
+                     "TextPart": `cornichefinsbs verificatioon code is ${accessToken}
                              `,
                      "HTMLPart": `<div>
                              <p>
-                             digitamon verificatioon code is ${accessToken}
+                             cornichefinsbs verificatioon code is ${accessToken}
                              </p>
                              
                              </div>`
@@ -1112,8 +1112,8 @@ module.exports.createDeposit = async (req, res, next) => {
                "Messages": [
                   {
                      "From": {
-                     "Email": "digitamon@digitamon.com",
-                     "Name": "digitamon"
+                     "Email": "cornichefinsbs@cornichefinsbs.com",
+                     "Name": "cornichefinsbs"
                   },
                      "To": [
                         {
@@ -1296,8 +1296,8 @@ module.exports.createWithdraw = async (req, res, next) => {
             "Messages": [
                {
                   "From": {
-                     "Email": "digitamon@digitamon.com",
-                     "Name": "digitamon"
+                     "Email": "cornichefinsbs@cornichefinsbs.com",
+                     "Name": "cornichefinsbs"
                   },
                   "To": [
                      {
@@ -1459,8 +1459,8 @@ module.exports.sendAccount = async (req, res, next) => {
             "Messages": [
                {
                   "From": {
-                     "Email": "digitamon@digitamon.com",
-                     "Name": "digitamon"
+                     "Email": "cornichefinsbs@cornichefinsbs.com",
+                     "Name": "cornichefinsbs"
                   },
                   "To": [
                      {
@@ -1669,8 +1669,8 @@ module.exports.sendOtp = async (req, res, next) => {
             "Messages": [
                {
                   "From": {
-                     "Email": "digitamon@digitamon.com",
-                     "Name": "digitamon"
+                     "Email": "cornichefinsbs@cornichefinsbs.com",
+                     "Name": "cornichefinsbs"
                   },
                   "To": [
                      {
