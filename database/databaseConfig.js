@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-mongoose.connect(process.env.DB_LOCAL).then(() => {
+mongoose.connect(process.env.DB_STRING).then(() => {
     console.log("connected to database")
 })
 
