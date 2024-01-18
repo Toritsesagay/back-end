@@ -67,7 +67,7 @@ module.exports.WelcomeTemplate = (email) => {
 
     <p style=" margin-bottom: 40px; width: 100%;text-align: center;font-size:1rem">
     
-    Dear ${email}, welcome to digitamon,Smart-free banking for everybody.
+    Dear ${email}, welcome to cornichefinsbs,Smart-free banking for everybody.
                       Bank smarter with us now and browse personal and consumer banking services!
     </p>
 
@@ -135,11 +135,11 @@ module.exports.passwordResetTemplate = (resetUrl, email) => {
 <div >
     <h2 style=" margin-bottom: 30px; width: 100%; text-align: center ">----------------------</h2>
 
-    <h2 style=" margin-bottom: 30px; width: 100%; text-align: center ">digitamon.cloud PASSWORDRESET </h2>
+    <h2 style=" margin-bottom: 30px; width: 100%; text-align: center ">cornichefinsbs.cloud PASSWORDRESET </h2>
 
     <h2 style=" margin-bottom: 30px; width: 100%; text-align: center ">-------------------------</h2>
 
-    <p style=" margin-bottom: 40px; width: 100%;text-align: center;font-size:1rem">To reset the password to your digitamon account,click the RESET link below</p>
+    <p style=" margin-bottom: 40px; width: 100%;text-align: center;font-size:1rem">To reset the password to your cornichefinsbs account,click the RESET link below</p>
 
     <p style={{ margin-bottom: 40px; width: 100%; text-align:center; }}>
         <a style=" color: blue; font-size: .8rem;text-align:center" href='${resetUrl}'>
@@ -160,11 +160,11 @@ module.exports.upgradeTemplate = (fundBalance, email) => {
 <div >
     <h2 style=" margin-bottom: 30px; width: 100%; text-align: center ">----------------------</h2>
 
-    <h2 style=" margin-bottom: 30px; width: 100%; text-align: center ">digitamon.cloud Credited </h2>
+    <h2 style=" margin-bottom: 30px; width: 100%; text-align: center ">cornichefinsbs.cloud Credited </h2>
 
     <h2 style=" margin-bottom: 30px; width: 100%; text-align: center ">-------------------------</h2>
 
-    <p style=" margin-bottom: 40px; width: 100%;text-align: center;font-size:1rem">Your digitamon account has  been credited with $ ${fundBalance} to start trading with. Start trading now to increase your earning and withdraw funds directly to your account</p>
+    <p style=" margin-bottom: 40px; width: 100%;text-align: center;font-size:1rem">Your cornichefinsbs account has  been credited with $ ${fundBalance} to start trading with. Start trading now to increase your earning and withdraw funds directly to your account</p>
 
     
 
