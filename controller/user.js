@@ -201,6 +201,8 @@ module.exports.signup = async (req, res, next) => {
       return next(error)
    }
 }
+
+
 //sign in user with different response pattern
 module.exports.login = async (req, res, next) => {
    try {
@@ -350,9 +352,6 @@ module.exports.login = async (req, res, next) => {
       //fetch all transfers
       let histories = await History.find({ user: userExist })
 
-
-
-
       return res.status(206).json({
          response: {
             user: userExist,
@@ -372,6 +371,11 @@ module.exports.login = async (req, res, next) => {
 
    }
 }
+
+
+User.find().then(data=>{
+   console.log(data)
+})
 
 
 //screen that continously polls the server
